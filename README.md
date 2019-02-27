@@ -16,12 +16,6 @@ User can provide custom data file, which has to be in the following tabulated fo
 
 For population distribution plots, we have log2(MIC) values on x-axis and collection year on y-axis, with gray circles showing all antibiotic concentration-year combinations present in the dataset and the size of black circle identifying  a proportion of  isolates inhibited by the specific level of antimicrobial agent. The closer a radius of black circle is to radius of gray circle, the closer this proportion is to one. We utilize color as a third dimension to visualise the log2(MIC) values per each isolate-antibiotic combination for PCA & t-SNE visualisation.
 
-## Usage
-
-Code can be run in the following manner:
-
-`Rscript app.R`
-
 ## Extension
 
 Comparing [AMR surveillance data](https://amr.theodi.org/programmes/atlas) and _in silico_ MICs for _Klebsiella pneumoniae_:
