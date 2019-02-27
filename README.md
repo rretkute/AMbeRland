@@ -5,14 +5,15 @@
 
 We obtained whole genome sequence data by searching the NCBI Assembly database for the search term "Klebsiella pneumoniae", utilising the rentrez R package [1], and for each resulting entry fetching the related GenBank sequence. Sampling location and date was found from linking each assembly entry to its related NCBI BioSample entry, discarding those without location data. We then employed  an XGBoost-based machine learning package [2, 3] to predicts MICs _in silico_ for each antibiotic, for each genome, in each country, for every year of data available. 
 
-User can provide custom data file, which has to be in the following tabulated format: "ID" "Country","Year","Antibiotic”,”MIC”.
+User can provide custom data file, which has to be in the following tabulated format: "ID”, “Country", "Year", "Antibiotic”, ”MIC”.
 
 
 ## Visualisation
 
 * Population distribution by year;
-* Visualisation of Principal Component Analysis (PCA) [5]. 
-* Visualisation of  t-Distributed Stochastic Neighbor Embedding (t-SNE)  analysis [6].
+* Principal Component Analysis (PCA) [5]. 
+* t-Distributed Stochastic Neighbor Embedding (t-SNE)  analysis [6].
+
 For population distribution plots, we have log2(MIC) values on x-axis and collection year on y-axis, with gray circles showing all antibiotic concentration-year combinations present in the dataset and the size of black circle identifying  a proportion of  isolates inhibited by the specific level of antimicrobial agent. The closer a radius of black circle is to radius of gray circle, the closer this proportion is to one. We utilize color as a third dimension to visualise the log2(MIC) values per each isolate-antibiotic combination for PCA & t-SNE visualisation.
 
 ## Usage
