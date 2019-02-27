@@ -1,7 +1,3 @@
-# setwd("/Users/renataretkute/Documents/GitHub/AMbeRland")
-#library(factoextra)
-#library(FactoMineR)
-
 
 ###################################################
 ### Shiny app for visualisation of MIC densities
